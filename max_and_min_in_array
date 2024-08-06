@@ -1,0 +1,30 @@
+import java.util.*;
+public class Main{
+//sum of numer divisible by 4 - sum of number not divisible by 4 range 20
+public static int[] minandmax(int n,int[] arr){
+    int min=Integer.MAX_VALUE;
+    int max=Integer.MIN_VALUE;
+    for(int i=0;i<n;i++){
+        if(arr[i]>max){
+            max=arr[i];
+        }
+        if(arr[i]<min){
+            min=arr[i];
+        } 
+    }
+    return new int[]{min,max};
+}
+public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int[] ans=new int[n];
+        for(int i=0;i<n;i++)
+        {
+        ans[i]=sc.nextInt();
+        }
+        int[] result=minandmax(n,ans);
+        System.out.println(result[0]);
+        System.out.println(result[1]);
+    }
+}
