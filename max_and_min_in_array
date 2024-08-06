@@ -1,6 +1,5 @@
 import java.util.*;
 public class Main{
-//sum of numer divisible by 4 - sum of number not divisible by 4 range 20
 public static int[] minandmax(int n,int[] arr){
     int min=Integer.MAX_VALUE;
     int max=Integer.MIN_VALUE;
