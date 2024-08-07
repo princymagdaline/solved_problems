@@ -1,0 +1,9 @@
+import java.util.*;
+public class Main{
+public static void main(String[]args)
+    {
+        String s1="i am a technical trainer";
+        String[] str=s1.split(" ");
+        System.out.print(str.length);
+     }
+}
