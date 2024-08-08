@@ -20,12 +20,12 @@ public static void main(String[]args)
     {
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
-        int[] arr=new int[n];
-        for(int i=0;i<arr.length;i++)
+        int[] nums=new int[n];
+        for(int i=0;i<nums.length;i++)
         {
-        arr[i]=sc.nextInt();
+        nums[i]=sc.nextInt();
         }
-        int result=findPeakElement(arr);
+        int result=findPeakElement(nums);
         System.out.print(result);
         
 
