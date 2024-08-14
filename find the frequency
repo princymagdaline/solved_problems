@@ -1,0 +1,24 @@
+import java.util.*;
+public class Solution{
+    public static int frequency(int[] nums,int n,int x){
+        int count=0;
+        for(int i =0;i<nums.length;i++){
+            if(nums[i]==x){
+                count++;
+            }
+        }
+        return count;
+
+    }
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        int x=sc.nextInt();
+        int n=sc.nextInt();
+        int[] nums=new int[n];
+        for(int i=0;i<nums.length;i++){
+            nums[i]=sc.nextInt();
+        }
+        int result=frequency(nums,n,x);
+        System.out.println(result);
+    }
+}
