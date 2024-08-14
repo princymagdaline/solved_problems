@@ -1,0 +1,32 @@
+import java.util.*;
+public class Solution{
+    public static void main(String[]args){
+        
+        String[] arr={"princy","princess","prince"};
+       
+        Arrays.sort(arr);
+        StringBuilder str=new StringBuilder();
+        for(int i=0;i<arr.length;i++){
+            System.out.println(arr[i])
+        }
+        String first=arr[0];
+        String last=arr[arr.length-1];
+       int k=0,l=0;
+        while ( k < first.length() && l< last.length()){
+            if(first.charAt(k)==last.charAt(l))
+            {
+                str.append(first.charAt(k));
+                k++;
+                l++;
+                
+            }
+            else{
+                break;
+            }
+        }
+        System.out.print(str.toString());
+        
+        
+    }
+
+}
