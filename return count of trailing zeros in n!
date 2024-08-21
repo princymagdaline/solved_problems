@@ -1,0 +1,13 @@
+import java.util.*;
+public class Solution{
+    public static void main(String[]args){
+        long n=1000;
+        long count=0;
+        while(n>=5){
+            n /=5;
+            count +=n;
+        }
+        System.out.println(count);
+     
+    }
+}
